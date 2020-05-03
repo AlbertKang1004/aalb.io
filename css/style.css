@@ -1,0 +1,127 @@
+html, body {
+/* Overriding default browser settings */
+  margin : 0px;
+  padding : 0px;
+}
+
+
+a {
+/* Overriding default <a> tag's properties */
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.nav-bar-margin {
+  /* The long index bar at the top, excluding margin */
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #444444;
+  display: flex;
+  /* border: 1px solid white; */
+}
+
+.nav-bar {
+/* The long index bar at the top, excluding margin */
+
+  color: white;
+  height: 65px;
+  font-size: 20px;
+  display: flex;
+  padding-right: 20rem;
+  font-family: 'Questrial', sans-serif;
+  /* border: 1px solid red; */
+}
+
+.nav-bar-inner {
+/* Inside the navigation bar */
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 30px;
+  /* border: 1px solid orange; */
+
+}
+
+.nav-bar-inner span {
+/* Each elements inside the nav-bar */
+  margin: auto 25px auto 25px;
+  display: flex;
+  /* border: 1px solid yellow; */
+}
+
+.nav-bar-logo {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /* border: 1px solid lightgreen; */
+}
+
+#logo {
+  width: auto;
+  height: 60px;
+  /* border: 1px solid skyblue; */
+}
+
+.nav-bar-language {
+  /* border: 1px solid skyblue; */
+  display: flex;
+}
+
+.nav-bar-language img {
+  margin: auto 15px auto 15px;
+  display: flex;
+}
+
+.title-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/img/title-image.jpg');
+  width: 1fr;
+  height: 30rem;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
+
+.title-image-overlay {
+  width: 100vw;
+  height: 1fr;
+  display: inline-block;
+  color: white;
+  font-size: 5rem;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid skyblue; */
+}
+
+.title-image-overlay span {
+  border: 0.2rem solid white;
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  background-color: #222222;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  height: 1fr;
+
+
+}
+
+.content-row-one {
+  /* border: 1px solid red; */
+  display:grid;
+  grid-template-columns:70% 30%;
+padding-left: 10%;
+}
+.content-row-one-desc {
+  /* border: 1px solid blue; */
+}
+
+.content-row-one-image {
+  /* border: 1px solid green; */
+  background-color: #140a58dd;
+  background-size: cover;
+  height: 30rem;
+}
