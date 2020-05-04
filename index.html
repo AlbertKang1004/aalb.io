@@ -5,16 +5,20 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Questrial&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="js/source.js"></script>
     <title>Aalb.io</title>
   </head>
   <body>
     <header class="nav-bar-margin">
       <div class="nav-bar">
         <div class="nav-bar-logo">
-          <img id="logo" src="img/logo.png">
+          <a href="index.html">
+            <img id="logo" src="img/logo.png">
+          </a>
         </div>
         <div class="nav-bar-inner">
-          <span><a href="about.html">About</a></span>
+          <a href="about.html"><span>About</span></a>
           <span><a href="design.html">Design</a></span>
           <span><a href="contact.html">Contact</a></span>
           <span><a href="history.html">History</a></span>
@@ -28,23 +32,14 @@
     </header>
     <div class="title-image">
       <div class="title-image-overlay">
-        <span class="title-image-overlay-text">WELCOME</span>
+        <span class="title-image-overlay-text" onmouseover="zoomAnimation();" onmouseout="zoomAnimationReverse();">WELCOME</span>
       </div>
     </div>
     <div class="content">
       <div class="content-row-one">
-        <div class="content-row-one-desc">
-          <p>Hi!</p><p>Welcome to Aalb.io.</p>
-          <p>This website was designed/published by <b>Albert Kang</b>.</p>
-        </div>
-        <div class="content-row-one-image">
-          <img src="img/internet-icon.png" style="width:20rem;height:20rem;padding:5rem 5rem 5rem 5rem">
-        </div>
+        <p>Hi!</p><p>Welcome to Aalb.io.</p>
+        <p>This website was designed/published by <b>Albert Kang</b>.</p>
       </div>
-
-      <!-- <p>
-        For your best experience, I recommend you to use PC/Laptop to access the website. Compatibility with smartphone browsers may be incomplete.
-      </p> -->
     </div>
   </body>
 </html>

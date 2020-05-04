@@ -2,6 +2,12 @@ html, body {
 /* Overriding default browser settings */
   margin : 0px;
   padding : 0px;
+  height: 100%;
+}
+
+body {
+  display:flex;
+  flex-direction:column;
 }
 
 
@@ -15,7 +21,7 @@ a {
   /* The long index bar at the top, excluding margin */
   padding-left: 10%;
   padding-right: 10%;
-  background-color: #444444;
+  background-color: rgb(68,68,68);
   display: flex;
   /* border: 1px solid white; */
 }
@@ -35,18 +41,21 @@ a {
 .nav-bar-inner {
 /* Inside the navigation bar */
   display: flex;
-  margin-top: 15px;
-  margin-bottom: 15px;
   margin-left: 30px;
   /* border: 1px solid orange; */
-
+  align-items: center;
 }
 
 .nav-bar-inner span {
 /* Each elements inside the nav-bar */
-  margin: auto 25px auto 25px;
-  display: flex;
+  padding: 22.5px 25px 22.5px 25px;
+  display: inline-block;
+  transition: 0.2s;
   /* border: 1px solid yellow; */
+}
+
+.nav-bar-inner span:hover {
+  background-color: rgb(98, 98, 98);
 }
 
 .nav-bar-logo {
@@ -69,6 +78,11 @@ a {
 .nav-bar-language img {
   margin: auto 15px auto 15px;
   display: flex;
+  transition: 0.3s
+}
+
+.nav-bar-language img:hover {
+  transform: scale(0.8);
 }
 
 .title-image {
@@ -78,6 +92,8 @@ a {
   background-position: center;
   background-size: cover;
   display: flex;
+  overflow: hidden;
+  background-size: 100%;
 }
 
 .title-image-overlay {
@@ -90,6 +106,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+
   /* border: 1px solid skyblue; */
 }
 
@@ -97,31 +114,25 @@ a {
   border: 0.2rem solid white;
   padding: 1rem 1rem 1rem 1rem;
   background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.4s;
+}
+
+.title-image-overlay span:hover {
+  transform: scale(1.03);
 }
 
 .content {
-  background-color: #222222;
-  color: white;
-  font-family: 'Raleway', sans-serif;
+  background-color: #eeeeee;
+  color: black;
+  font-family: 'Roboto', sans-serif;
   font-size: 2rem;
-  height: 1fr;
-
-
+  flex: 1;
+  display:flex;
+  padding-left: 10%;
+  padding-top: 3rem;
 }
 
 .content-row-one {
-  /* border: 1px solid red; */
-  display:grid;
-  grid-template-columns:70% 30%;
-padding-left: 10%;
-}
-.content-row-one-desc {
-  /* border: 1px solid blue; */
-}
-
-.content-row-one-image {
-  /* border: 1px solid green; */
-  background-color: #140a58dd;
-  background-size: cover;
-  height: 30rem;
+  border-left: 4px solid black;
+  padding-left: 2rem;
 }
