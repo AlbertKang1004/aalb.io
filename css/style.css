@@ -135,4 +135,37 @@ a {
 .content-row-one {
   border-left: 4px solid black;
   padding-left: 2rem;
+  overflow: hidden;
+}
+
+.content-row-one p {
+  transform: translateX(-130%);
+  animation: slideFromLeft 3s forwards ease-out;
+}
+
+@keyframes slideFromLeft {
+  to {
+  transform: translateX(0);
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
+  color: darkgray;
+}
+
+@media screen and (max-width: 1330px) {
+  .footer {
+    display: none;
+  }
+  .nav-bar-language {
+    display: none;
+  }
+  .nav-bar {
+    padding-right: 0rem;
+  }
 }
