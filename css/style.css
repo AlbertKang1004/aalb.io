@@ -6,8 +6,7 @@ html, body {
 }
 
 body {
-  display:flex;
-  flex-direction:column;
+
 }
 
 
@@ -168,4 +167,45 @@ a {
   .nav-bar {
     padding-right: 0rem;
   }
+}
+
+.about-title-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/img/about-image.jpg');
+  width: 1fr;
+  height: 25rem;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  overflow: hidden;
+  background-size: 100%;
+}
+
+.about-title-image-overlay {
+  width: 100vw;
+  color: white;
+  font-size: 5rem;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* border: 1px solid skyblue; */
+}
+
+.boxes {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.boxes div {
+  border: 1px solid black;
+  width: 15rem;
+  height: 15rem;
+  display: inline-block;
+  margin: 2rem 2rem 2rem 2rem;
+}
+
+.third-box {
+  margin-right: 2rem;
+  position: relative;
 }
