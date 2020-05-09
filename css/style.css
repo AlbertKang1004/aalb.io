@@ -167,6 +167,7 @@ a {
   .nav-bar {
     padding-right: 0rem;
   }
+<<<<<<< HEAD
 }
 
 .about-title-image {
@@ -208,4 +209,6 @@ a {
 .third-box {
   margin-right: 2rem;
   position: relative;
+=======
+>>>>>>> 3d397c051d9c3683e2303ee2a68e0089ccfe74a1
 }
